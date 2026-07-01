@@ -150,3 +150,25 @@ There is no malicious intent in releasing this — I’m simply moving on, that�
 ## 🔧 Moderation Control
 - Fusion global ban list toggle  
   (Enable or disable Fusion’s built-in global bans in case of false positives)
+
+--
+
+## 🐛 Known Issues
+
+- If your game closes while editing permissions as host, you may need to delete the `userdata` folder from the game’s install directory.
+- This is a rare bug that can occur if you previously had an older version of Fusion Protector installed and then updated it.
+
+---
+
+## 🛠️ Build / Setup (Compile Directly Into BONELAB Mods Folder)
+
+You can configure the project to automatically compile directly into your BONELAB Mods folder to save time during development.
+
+### How to set it up:
+
+Edit `FusionProtectorByJamesReborn.csproj` and modify the post-build event:
+
+```xml
+<Target Name="PostBuild2" AfterTargets="PostBuildEvent">
+  <Exec Command="copy &quot;$(TargetPath)&quot; &quot;G:\GAMES TO PLAY ON CHANNEL\BONELAB-SteamGG.NET\Mods\&quot;" />
+</Target>
