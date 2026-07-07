@@ -1,4 +1,4 @@
-# Fusion Protector Project
+# Nemesis Anti-Cheat Project
 
 ## Overview
 
@@ -156,7 +156,7 @@ There is no malicious intent in releasing this — I’m simply moving on, that�
 ## 🐛 Known Issues
 
 - If your game closes while editing permissions as host, you may need to delete the `userdata` folder from the game’s install directory.
-- This is a rare bug that can occur if you previously had an older version of Fusion Protector installed and then updated it.
+- This is a rare bug that can occur if you previously had an older version of Nemesis installed and then updated it.
 
 ---
 
